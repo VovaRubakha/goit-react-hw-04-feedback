@@ -1,3 +1,4 @@
+import { memo } from 'react';
 import PropTypes from 'prop-types';
 
 import style from './feedback.module.css'
@@ -20,7 +21,7 @@ function FeedbackOptions ({ options, onLeaveFeedback }) {
     )
 }
 
-export default FeedbackOptions
+export default memo(FeedbackOptions);
 
 FeedbackOptions.defaultProps = {
     options: [],
